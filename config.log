@@ -1,0 +1,15 @@
+/opt/miyoo-toolchain/bin/arm-buildroot-linux-musleabi-gcc /tmp/picodrive-conf--9794-.c -o /tmp/picodrive-conf--9794-
+/opt/miyoo-toolchain/bin/arm-buildroot-linux-musleabi-gcc -marm /tmp/picodrive-conf--9794-.c -o /tmp/picodrive-conf--9794- -lz
+/opt/miyoo-toolchain/bin/arm-buildroot-linux-musleabi-gcc -marm -c /tmp/picodrive-conf--9794-.c -o /tmp/picodrive-conf--9794-.o
+/opt/miyoo-toolchain/bin/arm-buildroot-linux-musleabi-gcc -marm -c /tmp/picodrive-conf--9794-.c -o /tmp/picodrive-conf--9794-.o
+/tmp/picodrive-conf--9794-.c: In function ‘main’:
+/tmp/picodrive-conf--9794-.c:2:17: warning: implicit declaration of function ‘avcodec_decode_audio3’; did you mean ‘avcodec_decode_audio4’? [-Wimplicit-function-declaration]
+    2 |   void main() { avcodec_decode_audio3(0, 0, 0, 0); }
+      |                 ^~~~~~~~~~~~~~~~~~~~~
+      |                 avcodec_decode_audio4
+/opt/miyoo-toolchain/bin/arm-buildroot-linux-musleabi-gcc -marm -I/opt/miyoo-toolchain/arm-buildroot-linux-musleabi/sysroot/usr/bin/../../usr/include/SDL -D_GNU_SOURCE=1 -D_REENTRANT /tmp/picodrive-conf--9794-.c -o /tmp/picodrive-conf--9794- -L/opt/miyoo-toolchain/arm-buildroot-linux-musleabi/sysroot/usr/bin/../../usr/lib -lSDL -lpthread -lm -lasound -lm -ldl -lpthread -lpthread
+/opt/miyoo-toolchain/bin/arm-buildroot-linux-musleabi-gcc -marm -I/opt/miyoo-toolchain/arm-buildroot-linux-musleabi/sysroot/usr/bin/../../usr/include/SDL -D_GNU_SOURCE=1 -D_REENTRANT -c /tmp/picodrive-conf--9794-.c -o /tmp/picodrive-conf--9794-.o -Wno-unused-result
+/tmp/picodrive-conf--9794-.c: In function ‘test’:
+/tmp/picodrive-conf--9794-.c:1:31: warning: implicit declaration of function ‘fread’ [-Wimplicit-function-declaration]
+    1 | void test(void *f, void *d) { fread(d, 1, 1, f); }
+      |                               ^~~~~
