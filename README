@@ -10,7 +10,4 @@ SSP16 (for 32X and SVP emulation). It was started by Dave (aka fdave,
 finalburn author) as basic Genesis/Megadrive emulator for Pocket PC,
 then taken over and expanded by notaz.
 
-PicoDrive was the first emulator ever to properly emulate Virtua Racing and
-it's SVP chip.
-
-The emulator's skin can be found and edited in the "platform/pandora/skin" directory.
+PicoDrive was the first emulator ever to properly emulate Virtua Racing and it's SVP chip.
